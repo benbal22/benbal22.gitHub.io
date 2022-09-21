@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,300&display=swap');
+img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 500px;
+}
+p {
+	color: grey;
+	text-align: center;
+}
+header {
+	color: darkred;
+}
+nav ul {
+display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	text-decoration: none;
+	 height: 150px;
+}
+nav ul li a {
+    margin: 10px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    background-image: url(hand.png);
+    background-size: cover;
+    background-position: center;
+  
+}
+#JugendAmter nav ul li a {
+    margin: 10px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    background-image: url(pallat.png);
+    background-size: cover;
+    background-position: center;
+  
+}
+#Sozialämter h1 {
+   text-align: center;
+   color: white;
+   background: rgb(65,133,52);
+background: linear-gradient(180deg, rgba(65,133,52,1) 0%, rgba(19,131,230,1) 0%);
+   padding: 40px;
+   margin: 35px;
+   width: 1700px;
+   height: 40px;
+}
+#Sozialämter p {
+   text-align: center;
+   color: black;
+background: rgb(65,133,52);
+background: linear-gradient(180deg, rgba(65,133,52,1) 0%, rgba(197,206,214,1) 0%);
+   padding: 40px;
+   margin: 35px;
+   width: 1700px;
+   height: 60px;
+   font-family: "Work Sans" ;
+}
+#Sozialämter h2 {
+   text-align: left;
+   color: black;
+   background-color: white;
+   margin: 35px;
+   width: 1700px;
+   height: 60px;
+}
+#Sozialämter li {
+   text-align: left;
+   color: grey;
+   background-color: white;
+   margin: 35px;
+  
+
+}
+#Sozialämter u li{
+   text-align: center;
+   color: white;
+  background: rgb(65,133,52);
+background: linear-gradient(180deg, rgba(65,133,52,1) 0%, rgba(27,76,191,1) 0%);
+   padding: 40px;
+   margin: 600px;
+   display: flex;
+   justify-content: right;
+   align-items: flex-end;
+   font-size: 25px;
+
+}
+#Sozialämter h3 img {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 500px;
+   
+
+}
+#Sozialämter h4 img {
+	padding: 10px;
+	margin: 20px;
+	width: 400px;
+	height: 300px;
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+
+   
+
+}
+
+}
+#JugendAmter h1 {
+   text-align: center;
+   color: white;
+   background-color: green;
+   padding: 40px;
+   margin: 35px;
+   width: 170px;
+   height: 40px;
+   font-size: 30px;
+}
+#JugendAmter p {
+   text-align: center;
+   color: black;
+background: rgb(65,133,52);
+background: linear-gradient(180deg, rgba(65,133,52,1) 0%, rgba(226,231,242,1) 0%);
+   padding: 40px;
+   margin: 35px;
+   width: 1700px;
+   height: 60px;
+   font-family: "Work Sans" ;
+}
+#JugendAmter h2 {
+   text-align: left;
+   color: black;
+   background-color: white;
+   margin: 35px;
+   width: 1700px;
+   height: 60px;
+}
+#JugendAmter li {
+   text-align: left;
+   color: grey;
+   background-color: white;
+   margin: 35px;
+  
+
+}
+#JugendAmter u li{
+   text-align: center;
+   color: white;
+  background: rgb(65,133,52);
+background: linear-gradient(180deg, rgba(65,133,52,1) 0%, rgba(27,76,191,1) 0%);
+   padding: 40px;
+   margin: 600px;
+   display: flex;
+   justify-content: right;
+   align-items: flex-end;
+   font-size: 25px;
+
+}
+#JugendAmter h4 img {
+	padding: 10px;
+	margin: 20px;
+	width: 400px;
+	height: 300px;
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+
+   
+
+}
+#JugendAmter img {
+	height: 140px;
+	width: 640px;
+}
+#JugendAmter h5 img {
+	padding: 10px;
+	margin: 20px;
+	width: 400px;
+	height: 300px;
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+}
+#Leinerstift h3 img {
+padding: 10px;
+	margin: 20px;
+	width: 400px;
+	height: 300px;
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+	size: 400px;
+}
+#Leinerstift main{
+	background-image: url(14.png);
+	background-size: !important;
+	background-position: center;
+	padding: 370px;
+	margin: 60px;
+	
+}
+#contact nav ul {
+display: inline;
+	justify-content: space-between;
+	align-items: center;
+	list-style: none;
+	text-decoration: none;
+	 height: 150px;
+}
+#contact ul li a {
+    margin: 10px;
+    padding: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+  
+  
+}
