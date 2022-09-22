@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>rotation</title>
+
+<style type="text/css">
+
+.box {
+background-color: green;
+border: 1px solid;
+padding: 30px;
+height: 60px;
+width: 100px;
+position: absolute;
+left: 100px;
+top: 200px;
+}
+
+.box1 {
+background-color: green;
+border: 1px solid;
+padding: 30px;
+height: 60px;
+width: 100px;
+position: absolute;
+left: 100px;
+top: 200px;
+}
+.box1:hover {
+	transform: rotate(180deg);
+	transition-duration: 3s;
+}
+</style>
+
+</head>
+<body>
+	<h1>Transformation</h1>
+	<p>The rotate() function defines a transformation that rotates the element around a fixed point on the 2D plane, without deforming it</p>
+
+	<div class="box">
+		<h2>rotate</h2>
+    </div>
+
+    <div class="box1">
+    <h2>rotate</h2>
+    </div>  
+</body>
+</html>
