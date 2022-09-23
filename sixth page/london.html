@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@1,300&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 90px;
+  margin: 35px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+   background-image: url(hi.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a  {
+  padding: 5px;
+  margin: 5px;
+  color: red;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  /*Inline Element becomes block element*/
+  display: block;
+    border-radius: 20px;
+    width: 60px;
+}
+ul li a:hover {
+  background-color: yellow;
+}
+.transition1 ul li a:hover {
+  transition-duration: 0.2s;
+}
+
+
+article {
+  font-size: 20px;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-image: url(gangokamorra.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 300px; /* only for demonstration, should be removed */
+}
+article h1 {
+  color: red;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  background-image: url(hihi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+h2 {
+  text-align: center;
+  font-size: 39px;
+  color: Black;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+footer p:hover {
+   background-color: lightgrey;
+   color: black;
+   padding: 10px;
+   border-radius: 25px;
+   text-align: center;
+
+
+}
+.transition5 footer p:hover {
+  transition-duration: 0s;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+ article p {
+     font-family: "Work Sans";
+  }
+  
+}
+</style>
+</head>
+<body>
+
+<h2>London</h2>
+<img src="">
+<p></p>
+
+<header>
+    <video width="800" height="400"controls>
+  <source src="london2.mp4" type="video/mp4">
+  <source src="london2.ogg" type="video/ogg">
+  
+</video>
+
+</header>
+
+<section>
+  <nav>
+    <div class="transition1">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+      <li><a href="london.html">London</a></li>
+      <li><a href="Paris.html">Paris</a></li>
+    </ul>
+    <ul>
+      <li><a href="Tokyo.html">Tokyo</a></li>
+    </ul>
+  </div>
+  </nav>
+  
+  <article>
+    <h1>London</h1>
+    <p>London ist die Hauptstadt des Vereinigten Königreichs und des Landesteils England..</p>
+    <p> Die Stadt liegt an der Themse in Südostengland auf der Insel Großbritannien. Das heutige Verwaltungsgebiet mit den insgesamt 33
+    Die Stadt liegt an der Themse in Südostengland auf der Insel Großbritannien. Das heutige Verwaltungsgebiet mit den insgesamt 33.</p>
+    <p> Dort lebten 2019 rund 8,96 Millionen Menschen, davon rund 3,3 Millionen in den 13 Stadtbezirken von Inner London</p>
+  </article>
+</section>
+<div class="transition5">
+<footer>
+  <p>Bernard Bala</p>
+  <p>Ich bin klug 98.8%</p>
+  <p>6 Stunden</p>
+
+</footer>
+</div>
+
+</body>
+</html>
