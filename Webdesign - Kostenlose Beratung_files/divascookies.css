@@ -1,0 +1,132 @@
+/**
+ * Divas Cookies jquery plugin for Cookie Policy banner stylesheet
+ * @author: CodingDivas
+ * @date: 2014/10/27
+ * @version: 0.2 production
+ */
+ .tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	color: #037cff;
+  }
+  
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 300px;
+	background-color: #037cff;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -160px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	font-size: 12px;
+  }
+  
+  .tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+  }
+
+
+.divascookies {
+	position: fixed;
+    width: 100%;
+    /*background: rgba(0, 51, 106, 0.7);*/
+    color: #636363;
+    z-index: 999999;
+    border-top: solid;
+    border-top-color: currentcolor;
+    /*height: 100%;*/
+}
+
+.divascookies > .divascookies-banner-container {
+	position: fixed;
+	padding: 20px;
+	overflow: hidden;
+	background: #e8f3ff;;
+	border-top: 5px solid #037cff;
+	bottom:0;
+}
+
+@media (max-width: 991px){
+	.divascookies > .divascookies-banner-container {
+		font-size: 15px;
+	}
+}
+
+
+
+@media (max-width: 600px){
+	.divascookies > .divascookies-banner-container {
+	font-size: 14px;
+	margin-top: -150px;
+	}
+}
+
+
+
+.divascookies p.divascookies-banner-text {
+	position: relative;
+	line-height: 16px;
+	font-size: 14px;
+	display: inline-block;
+	padding: 0 10px 0 0;
+	color: #000;
+	font-weight: 300;
+	padding: 15px;
+}
+
+span.divascookies-policy-link {
+} 
+
+span.divascookies-policy-link a {
+	white-space: nowrap;	
+}
+
+span.divascookies-policy-link a:hover {
+	text-decoration: underline;
+    transition: color 0.3s ease 0s;
+}
+
+.divascookies-banner-container > .divascookies-accept-button-container {
+	display: inline-block;
+	margin: 15px;
+}
+
+.divascookies-accept-button-container > .divascookies-accept-button-img {
+	
+}
+
+.divascookies-accept-button-container > .divascookies-accept-button-text {
+	font-size: 16px;
+	cursor: pointer;
+	background: #037cff;
+	color: #fff;
+	padding: 7px 10px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;	
+    transition: background-color 0.3s ease 0s;
+}
+
+.divascookies-accept-button-container > .divascookies-accept-button-text:hover {
+	background: #565656;
+}
