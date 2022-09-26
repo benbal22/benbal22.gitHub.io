@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Work+Sans:ital,wght@1,300&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  padding: 90px;
+  margin: 35px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 500px; /* only for demonstration, should be removed */
+   background-image: url(city.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li a  {
+  padding: 5px;
+  margin: 5px;
+  color: red;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+  /*Inline Element becomes block element*/
+  display: block;
+    border-radius: 20px;
+    width: 80px;
+}
+ul li a:hover {
+  background-color: yellow;
+}
+.transition1 ul li a:hover {
+  transition-duration: 0.2s;
+}
+
+
+article {
+  font-size: 20px;
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-image: url(ff.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 500px; /* only for demonstration, should be removed */
+}
+article h1 {
+  color: red;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  background-image: url(sky+.jpg);
+  background-position: center;
+  background-size: cover;
+}
+h2 {
+  text-align: center;
+  font-size: 39px;
+  color: Black;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+footer p:hover {
+   background-color: lightgrey;
+   color: black;
+   padding: 10px;
+   border-radius: 25px;
+   text-align: center;
+
+
+}
+.transition5 footer p:hover {
+  transition-duration: 0s;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+ article p {
+     font-family: "Work Sans";
+  }
+  
+}
+
+
+
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 120px;
+  text-decoration: none;
+  font-size:15px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+</style>
+</head>
+<body id="varikarin">
+
+<h1 class="glow">Albania</h1>
+<img src="">
+<p></p>
+
+<header>
+    <video width="800" height="400"controls>
+  <source src="Albania.mp4" type="video/mp4">
+  <source src="Albania.ogg" type="video/ogg">
+  
+</video>
+
+</header>
+
+<section>
+  <nav>
+    <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="varikarin.html">Albania</a>
+  </div>
+</div>
+    
+
+    <div id="mySidenav" class="sidenav">
+  <a href="#" id="about">ig:bb.moin</a>
+  <a href="#" id="blog">balabenard2@</a>
+  <a href="#" id="projects">Adresse : Dreeskenweg , Leinerstift Großefehn</a>
+  <a href="#" id="contact">Contact : 0676815483</a>
+</div>
+
+<div style="margin-left:80px;">
+
+   
+    <ul>
+    </ul>
+  </div>
+  </nav>
+  
+  <article>
+    <h1>Albania</h1>
+    <div class="transition1">
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+    <li><a href="varikarin.html">Albania</a></li>
+   
+    </ul>
+    <p></p>
+    <p></p>
+    <p> </p>
+  </article>
+</section>
+<div class="transition5">
+
+
+</body>
+</html>
+
+

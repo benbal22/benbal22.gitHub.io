@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Benard Bala</title>
+	<style type="text/css">
+nav {
+	padding: 20px;
+	margin: 20px;
+	background-color: lightblue;
+
+}
+nav:hover {
+	background-color: black;
+	color: neon;
+}
+.transition nav :hover {
+	transition-duration: 1s;
+}
+
+nav ul {
+	color: black;
+	font-size: 20px;
+
+}
+nav ul li {
+	padding: 20px;
+	margin: 20px;
+	background-color: blueviolet;
+	border-radius: 10px;
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 15%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  height: 450px;
+  text-align: center;
+}
+
+#London {background-image: url(london.jpg ); background-position: center; background-size: cover;}
+#Paris { background-image: url( paris.jpg); background-position: center; background-size: cover; }
+#Tokyo { background-image: url( tokyo.jpg); background-position: center; background-size: cover;}
+#Oslo { background-image: url( oslo.jpg); background-position: center; background-size: cover; }
+#Toronto { background-image: url( toronto.jpg); background-position: center; background-size: cover; }
+#Tirana { background-image: url( tirana.jpg); background-position: center; background-size: cover; }
+#Athens { background-image: url( athens.jpg); background-position: center; background-size: cover; }
+#Newyourk { background-image: url( newyourk.jpg); background-position: center; background-size: cover; }
+#Vienna { background-image: url( Vienna.jpg); background-position: center; background-size: cover; }
+#Belgrade { background-image: url( belgrade.jpg); background-position: center; background-size: cover; }
+#Prishtina { background-image: url( Prishtina.jpg); background-position: center; background-size: cover; }
+#Minsk { background-image: url( minsk.jpg); background-position: center; background-size: cover; }
+
+
+h1 {
+	color: black;
+}
+p {
+	font-size: 20px;
+	color: black;
+}
+body {
+	  background-image: url( jesus.jpg); background-position: center; background-size: cover; 
+}
+
+
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+
+ body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#mySVG {
+  position: fixed;
+  top: 15%;
+  width: 400px;
+  height: 210px;
+  margin-left:-50px;
+}
+	</style>
+
+</head>
+<body id="About"></body>
+<div class="transition">
+	<nav>
+		
+    <div class="navbar">
+  <a class="active" href="index.html"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="https://www.bing.com/search?q=google&qs=n&form=QBRE&sp=-1&pq=google+translate&sc=15-16&sk=&cvid=1211D2C06CDC4A938F3DC8D34EA0F3E1&ghsh=0&ghacc=0&ghpl="><i class="fa fa-fw fa-search"></i> Search</a> 
+  <a href="about.html"><i class="fa fa-fw fa-envelope"></i> About</a> 
+  <a href="varikarin.html"><i class="fa fa-fw fa-user"></i> Albania</a>
+</nav>
+<div style="padding-left:16px">
+  <h2></h2>
+  <p></p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+		
+	</ul>
+	</nav>
+
+	<p>Click on the buttons inside the tabbed menu:</p>
+
+<div id="London" class="tabcontent">
+  <h1>London</h1>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h1>Paris</h1>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h1>Tokyo</h1>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<div id="Oslo" class="tabcontent">
+  <h1>Oslo</h1>
+  <p>Oslo is the capital of Norway.</p>
+</div>
+<div id="Toronto" class="tabcontent">
+  <h1>Toronto</h1>
+  <p> Toronto is the capital of Ontario .</p>
+</div>
+<div id="Tirana" class="tabcontent">
+  <h1>Tirana</h1>
+  <p>Tirana is the capital of Albania.</p>
+</div>
+<div id="Athens" class="tabcontent">
+  <h1>Athens</h1>
+  <p> Athens is the capital of Greece .</p>
+</div>
+<div id="Newyourk" class="tabcontent">
+<h1>New yourk</h1> 
+<p> New yourk is the capital of Albany</p>
+</div>
+<div id="Vienna" class="tabcontent">
+<h1>Vienna</h1> 
+<p> Vienna  is the capital of Austria</p>
+</div>
+<div id="Belgrade" class="tabcontent">
+<h1>Belgrade</h1> 
+<p> Belgrade  is the capital of Serbia</p>
+</div>
+<div id="Prishtina" class="tabcontent">
+<h1>Prishtina</h1> 
+<p> Prishtina is the capital of Kosovo</p>
+</div>
+<div id="Minsk" class="tabcontent">
+<h1>Minsk</h1> 
+<p> Minsk is the capital of Belarus</p>
+</div>
+
+
+
+
+
+<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+<button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+<button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+<button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button>
+<button class="tablink" onclick="openCity('Toronto', this, 'yellow')">Toronto</button>
+<button class="tablink" onclick="openCity('Tirana', this, 'pink')">Tirana</button>
+<button class="tablink" onclick="openCity('Athens', this, 'green')">Athens</button>
+<button class="tablink" onclick="openCity('Newyourk', this, 'grey')">New yourk</button>
+<button class="tablink" onclick="openCity('Vienna', this, 'violet')">Vienna</button>
+<button class="tablink" onclick="openCity('Belgrade', this, 'blue')">Belgrad</button>
+<button class="tablink" onclick="openCity('Prishtina', this, 'lightblue')">Prishtina</button>
+<button class="tablink" onclick="openCity('Minsk', this, '#B284BE')">Minsk</button>
+
+
+<script>
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</div>
+
+<svg id="mySVG">
+  <path fill="none" stroke="red" stroke-width="3" id="triangle" d="M150 0 L75 200 L225 200 Z" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+<script>
+// Get the id of the <path> element and the length of <path>
+var triangle = document.getElementById("triangle");
+var length = triangle.getTotalLength();
+
+// The start position of the drawing
+triangle.style.strokeDasharray = length;
+
+// Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+triangle.style.strokeDashoffset = length;
+
+// Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+window.addEventListener("scroll", myFunction);
+
+function myFunction() {
+var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+  var draw = length * scrollpercent;
+  
+  // Reverse the drawing (when scrolling upwards)
+  triangle.style.strokeDashoffset = length - draw;
+}
+</script>
+
+<h1>Bernard</h1>
+
+<button onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Ich heiße Bernard Bala und wohne in Leinerstift Grossefehn Deutschland .Ich werde ein Medien Techniker . Ich liebe Technik und ich mach gerne Webseiten';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+</body>
+</html>
