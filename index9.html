@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+ 
+  background: rgba(0, 0, 0, 0.2);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: black;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #f1f1f1 ;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.main {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+</style>
+</head>
+<body id="Reykjavik">
+
+<video autoplay muted loop id="myVideo">
+  <source src="Reykjavik.mp4" type="video/mp4">
+</video>
+
+  
+  <div class="navbar">
+  <a href="index.html">Dubai</a>
+    <a href="index1.html">Seoul</a>
+  <a href="index2.html">Bangkok</a>
+  <a href="index3.html">Singapore</a>
+  <a href="index4.html" >Austria</a>
+  <a href ="index5.html" >Deutschland</a>
+  <a href="index6.html" >Switzerland</a>
+ <a href="index7.html" >Prague</a>
+   <a href="index8.html" >Oslo</a>
+   <a href="index9.html" class="active">Reykjavik</a>
+   <a href="index10.html">Brussel</a>
+     <a href="index11.html">Dublin</a>
+     <a href="index12.html">Moscow</a>
+    <a href="index13.html">Istanbul</a>
+    <a href="index14.html">Albania</a>
+    <a href="index15.html">Dubrovnik</a>
+    <a href="index16.html">Madrid</a>
+    <a href="index17.html">Lisbon</a>
+    <a href="index18.html" class="active">Web Designer</a>
+
+</div>
+
+
+<div class="content">
+  <h1>Reykjavik</h1>
+  <p>
+
+  </p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
