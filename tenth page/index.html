@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lari</title>
+<style>
+div {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 2s;  
+animation-iteration-count: infinite;
+border-radius: 20px 20px;
+text-align: center;
+text-weight: bold;
+}
+}
+
+@keyframes example {
+  0%   {background-color: red; right:0px;}
+  50%  {background-color: yellow; left:200px;}
+  100% {background-color: red; top:0px;}
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 15p;
+}
+nav {
+  padding: 100px;
+  margin: 100px;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.div1 {
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 2s;  
+animation-iteration-count: infinite;
+border: 5px dotted red;
+  
+animation-timing-function
+: 
+ease-in-out
+;
+}
+
+@keyframes example {
+  0%   {background-color: red; right:0px;}
+  50%  {background-color: yellow; left:200px;}
+  100% {background-color: green; right:0px;}
+}
+
+ul li a {
+  padding: 20px;
+  margin: 20px;
+  border: 2px dotted green;
+  background-color: white;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: darkgrey;
+}
+.transitition li a:hover {
+  transition-duration: 3s;
+}
+
+body {
+  background: rgb(130,130,130);
+background: linear-gradient(90deg, rgba(130,130,130,1) 3%, rgba(22,24,25,1) 16%, rgba(32,99,166,1) 48%, rgba(32,49,69,1) 80%, rgba(116,117,117,1) 95%);
+}
+
+</style>
+
+<body>
+  <nav>
+    <ul>
+     <li><a href="index2.html">Animation2</a></li>
+     <ul>
+  <div class="transition"><h1>
+  Bernard
+</h1></div>
+
+</nav>
+
+<section class="div1"><h1>
+  Bernard
+</h1></div>
+
+</body>
+</html>

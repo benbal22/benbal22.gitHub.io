@@ -1,0 +1,71 @@
+<style>
+.transition{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 1.5s;
+
+animation-timing-function
+: 
+ease-in-out
+;
+  
+animation-iteration-count
+: 
+infinite
+;
+
+animation-direction
+: 
+alternate
+;
+border-radius: 20px 20px;
+text-align: center;
+text-weight: bold;
+}
+
+@keyframes example {
+  0%   {background-color: red; left:200px;}
+  20%  {background-color: yellow; left:500px;}
+  50% {background-color: red; left:1000px;}
+   70% {background-color: black; left:1200px;}
+   100%{background-color: white; right: 800px;}
+
+}
+nav {
+  padding: 100px;
+  margin: 100px;
+  margin-bottom: 20px;
+  background-color: black;
+  width: 1000px;
+}
+ul li a {
+  padding: 20px;
+  margin: 20px;
+  border: 2px dotted green;
+  background-color: white;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: darkgrey;
+}
+.transitition li a:hover {
+  transition-duration: 3s;
+}
+
+body {
+  background: rgb(14,39,43);
+background: radial-gradient(circle, rgba(14,39,43,1) 9%, rgba(19,31,28,1) 10%, rgba(149,46,158,1) 56%, rgba(80,37,70,1) 64%, rgba(39,42,73,1) 98%);
+}
+</style>
+
+<body>
+  <nav>
+    <ul>
+     <li><a href="index.html">Animation</a></li>
+     </ul>
+  <div class="transition">Bernard</div>
+</nav>
+</body>
