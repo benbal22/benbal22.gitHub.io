@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body {
+	display: inline-flex;
+	justify-content: center;
+	align-content: center;
+	min-height: 100vh;
+	background: #000;
+}
+.loader {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background: #2196f3;
+	border-radius: 50%;
+	box-shadow: inset 0 0 50px #000;
+}
+.load:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	width: 200%;
+	border-radius: 40px;
+	background: #111;
+	opacity: 0.8;
+	animation: animate 10 s linear infinite;
+}
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360%);
+	}
+}
