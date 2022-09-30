@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animationen</title>
+	<style type="text/css">
+		
+.big {
+
+background-color: green;
+height: 300px;
+width: 300px;
+position: absolute;
+margin-top: 200px;
+}
+
+.small {
+width: 50%;
+height: 50%;
+background-color: yellow;
+animation-name: move;
+animation-duration: 2s;
+/* Position des elementes nach der animation Element bleibt im endposition*/
+animation-fill-mode:forwards;
+/*fuehrt die animation 2x aus*/
+animation-direction:alternate;
+/*Anzahl der durchgaenge*/
+animation-iteration-count:infinite;
+}
+
+
+
+.big:hover .small {
+
+animation-play-state: paused;
+background-color: red;
+
+}
+
+@keyframes move {
+
+	0% {transform: translateX(100%) translateX(50%);}
+	33% {transform: translateY(100%)  ;}
+	66% {transform: translateX(100%)  ;}
+	100% {transform: translateX(100%); background-color: red;}
+
+}
+
+.big1 {
+
+background-color: green;
+height: 300px;
+width: 300px;
+position:initial;
+margin-top: 200px;
+}
+
+.small1 {
+width: 50%;
+height: 50%;
+background-color: yellow;
+animation-name: move;
+animation-duration: 3s;
+/* Position des elementes nach der animation Element bleibt im endposition*/
+animation-fill-mode:forwards;
+/*fuehrt die animation 2x aus*/
+animation-direction:alternate;
+/*Anzahl der durchgaenge*/
+animation-iteration-count:infinite;
+}
+
+
+
+.big1:hover .small1 {
+animation-play-state: paused;
+background-color: red;
+
+}
+
+
+
+
+@keyframes move {
+
+	0% {transform: translateX(100%) translateX(50%);}
+	33% {transform: translateY(100%)  ;}
+	66% {transform: translateX(100%)  ;}
+	100% {transform: translateX(100%); background-color: red;}
+
+}
+
+.big2 {
+
+background-color: green;
+height: 300px;
+width: 300px;
+position:initial;
+margin-top: 200px;
+}
+
+.small2 {
+width: 50%;
+height: 50%;
+background-color: yellow;
+animation-name: move;
+animation-duration: 3s;
+/* Position des elementes nach der animation Element bleibt im endposition*/
+animation-fill-mode:forwards;
+/*fuehrt die animation 2x aus*/
+animation-direction:alternate;
+/*Anzahl der durchgaenge*/
+animation-iteration-count:infinite;
+}
+
+
+
+.big2:hover .small2 {
+animation-play-state: paused;
+background-color: red;
+
+}
+
+
+
+
+@keyframes move {
+
+	0% {transform: translateX(100%) ;}
+	33% {transform: translateY(100%)  ;}
+	66% {transform: translateX(100%) translateY(50%) ;}
+	100% {transform: translateX(100%); background-color: red;}
+
+}
+
+
+
+p {
+	text-align: center;
+    font-weight: bolder  ;
+    color: black;
+}
+div {
+	text-align: center;
+	font-size: 30px;
+}
+	</style>
+
+
+
+</head>
+<body>
+<h1>Animation</h1>
+<p>An animation lets an element gradually change from one style to another.
+You can change as many CSS properties you want, as many times as you want.
+To use CSS animation, you must first specify some keyframes for the animation.
+<p>
+<div class="big">
+	<div class="small">1</div>
+</div>
+</p>
+<p>
+	<div class="big1">
+	<div class="small1">1</div>
+</div>
+</p>
+<p>
+	<div class="big2">
+	<div class="small2">2</div>
+</div>
+</p>
+</body>
+<footer>
+	<p>Bernard Bala</p>
+</footer>
+</html>
