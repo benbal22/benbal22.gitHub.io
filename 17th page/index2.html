@@ -1,0 +1,65 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+
+
+
+<style type="text/css">
+h1 {
+		position: relative;
+		font-size: 14vw;
+		color: #252839;
+		-webkit-text-stroke: o.3vw #383d52;
+		text-transform: uppercase;
+	}
+	h1::before {
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0;
+	width:100%;
+		height: 100%
+		color: #01f287;
+		-webkit-text-stroke: o.3vw #383d52;
+		border-right: 2px solid #01fe87;
+		overflow: hidden;
+		animation: animate 6s linear infinite;
+
+
+	}
+	@keyframes animate 
+	{
+		0%,10%,100%{width: 0%;}
+	
+
+	70%,90%{width: 100%;}
+}
+h1::after {
+		content: attr(data-text);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width:100%;
+		height: 100%;
+		color: #01f287;
+		-webkit-text-stroke: o.3vw #383d52;
+		border-right: 2px solid #01fe87;
+		overflow: hidden;
+		animation: animate 6s linear infinite;
+
+
+	}
+
+</style>
+</head>
+<body>
+	<ul>
+		<li><a href="index.html">Animation1</a></li>
+	</ul>
+<h1 data-text="  Ich bin sehr kreativ...">Ich bin sehr kreativ...</h1>
+</body>
+</html>
