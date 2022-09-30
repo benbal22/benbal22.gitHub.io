@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Translation</title>
+	<style type="text/css">
+		
+.container {
+	margin: 50px;
+	border: 3px dotted black;
+	padding: 20px;
+	width: 50px;
+	height: 200px;
+	background-color: white;
+	border-radius: 20px;
+
+
+}
+.box {
+	margin: 50px;
+	border: 3px dotted black;
+	padding: 20px;
+	width: 70px;
+	height: 115px;
+	background-color: white;
+	border-radius: 20px;
+    position:fixed;
+    display: inline-table;
+    right: 1300px;
+
+}
+
+
+
+
+
+.square1, .square2, .square3, .square4, .square5{
+width:30px;
+height: 30px;
+margin: 10px;
+display: block;
+justify-content: space-around;
+align-items: center;
+
+}
+
+
+
+
+.container:hover .square1, .container:hover .square2,.container:hover .square3, .container:hover .square4, .container:hover .square5
+{
+
+
+transform: translateX(400px);
+
+
+
+
+}
+
+
+
+
+
+
+.square{
+
+background-color: yellow;
+transition-duration: 2s;
+transition-timing-function: step-start;
+
+} 
+.square2{
+background-color: red;
+transition-duration: 4s;
+transition-timing-function: step-start;
+
+
+
+} 
+.square3{
+background-color: blue;
+transition-duration: 5s;
+transition-timing-function: step-start;
+
+
+} 
+.square4{
+background-color: green;
+transition-duration: 15s;
+transition-timing-function: step-start;
+
+
+
+
+
+} 
+
+.square5 {
+
+background-color: black;
+transition-duration: 3s;
+transition-timing-function: step-start;
+
+
+}
+
+body {
+	background-color: rebeccapurple;
+}
+body:hover {
+	background-color: white;
+}
+body:hover {
+	transition-duration: 2s;
+}
+
+
+li a{
+	text-decoration: none;
+}
+
+
+ul li a {
+	padding: 20px;
+	margin: 20px;
+	border: 2px dotted rebeccapurple;
+	border-radius: 20px;
+	background-color: white;
+	text-decoration: none;
+	display: inline-table;
+	justify-content: space-between;
+	
+	align-items: center;
+}
+
+
+	</style>
+</head>
+<body id="Step-start">
+	<ul>
+		<li><a href="index.html">linear</a></li>
+		<li><a href="index2.html">I dont Know</a></li>
+	</ul>
+
+<h1>Transformation</h1>
+<p>The translate() CSS function repositions an element in the horizontal and/or vertical dirctions.</p>
+<div class="container"><div class="box"></div>
+	<div class="square1"></div>
+	<div class="square2"></div>
+	<div class="square3"></div>
+	<div class="square4"></div>
+	<div class="square5"></div>
+</div>
+
+</body>
+</html>
