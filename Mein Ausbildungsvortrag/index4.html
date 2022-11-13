@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ausbildung</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+li {
+  word-spacing: 10px;
+  padding: 5px;
+ font-size: 20px;
+margin: 10px;
+transform: translateX(100px);
+  width: 145px;
+  height: 40px;
+    background-color: white;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    border: 3px solid yellow;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c";
+    border-radius: 10px;
+box-shadow: -47px -40px 63px 24px rgba(0,9,240,0.78);
+-webkit-box-shadow: -47px -40px 63px 24px rgba(0,9,240,0.78);
+-moz-box-shadow: -47px -40px 63px 24px rgba(0,9,240,0.78);
+cursor: cell;
+background-color: blue;
+}
+a {
+	color: white;
+}
+
+
+
+body {
+	overflow: hidden;
+  background: rgb(79,123,175);
+background: radial-gradient(circle, rgba(79,123,175,1) 49%, rgba(64,84,120,1) 100%);
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.windmill {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  width: 300px;
+  height:5px;
+  border-radius:10px;
+  background-color: #333;
+  left:-150px;
+  top:100px;
+  z-index:1;
+}
+
+.line:before {
+  content:"";
+  position: absolute;
+  background-color: #6a994e;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px 50px 0 0;
+  top:-50px;
+  left:50px;
+  box-shadow: 100px 0 #a7c957;
+}
+
+.line:after {
+  content:"";
+  position: absolute;
+  background-color: #6a994e;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px 50px 0 0;
+  top:-25px;
+  left:10px;
+  box-shadow: 50px 0 #a7c957, 105px 0 #6a994e, 195px 0 #6a994e, 225px 0 #a7c957;
+}
+
+.mill {
+  position: absolute;
+  border-bottom: 130px solid #333;
+  border-right: 25px solid transparent;
+  border-left: 25px solid transparent;
+  width: 80px;
+  height:0;
+  top:-28px;
+  left:-60px;
+  z-index:2;
+}
+
+.mill:before {
+  position: absolute;
+  content:"";
+  border-bottom: 120px solid #ab3428;
+  border-right: 22px solid transparent;
+  border-left: 22px solid transparent;
+  width: 70px;
+  height:0;
+  top:7px;
+  left:-16.5px;
+}
+
+.mill:after {
+  position: absolute;
+  content:"";
+  background-color: #333;
+  width: 20px;
+  height:5px;
+  border-radius:10px;
+  left:-2px;
+  top:20px;
+  box-shadow: 20px 40px #333, -10px 80px #333, 65px 5px #333, 70px 20px #333, 50px 80px #333, 55px 90px #333, 15px 95px #333, 10px 30px #333;
+}
+
+.door {
+  position: absolute; 
+  background-color: #621708;
+  width:25px;
+  height:40px;
+  border-radius:30px 30px 0 0;
+  border: 5px solid #333;
+  box-shadow: inset 1px 7px rgba(0,0,0,0.2);
+  top:55px;
+  left:-10px;
+  z-index:3;
+}
+
+.door:before {
+  position: absolute;
+  content:"";
+  border-bottom: 65px solid #333;
+  border-right: 65px solid transparent;
+  border-left: 65px solid transparent;
+  height:0;
+  width:0;
+  top:-145px;
+  left:-55px;
+}
+
+.door:after {
+  position: absolute;
+  content:"";
+  border-bottom: 50px solid #2d728f;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  height:0;
+  width:0;
+  top:-136px;
+  left:-40px;
+}
+
+.fan {
+  position: absolute;
+  background-color: #333;
+  width:25px;
+  height:25px;
+  border-radius:50%;
+  left:-7px;
+  top:-55px;
+  z-index:4;
+  animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.wingOne, .wingTwo, .wingThree, .wingFour {
+  position: absolute;
+  width:5px;
+  border: 5px solid #333;
+  height:25px;
+  background-color: #e6e6ea;
+  border-radius:10px;
+}
+
+.wingOne:before, .wingTwo:before, .wingThree:before, .wingFour:before {
+  position: absolute;
+  content:"";
+  background-color: #3b8ea5;
+  box-shadow: inset -5px 0 #f5ee9e;
+  border: 5px solid #333;
+  width:15px;
+  height:65px;
+  top:17px;
+  left:-10px;
+}
+
+.wingOne {
+  left:5px;
+  top:15px;
+}
+
+.wingTwo {
+  transform: rotate(90deg);
+  top:-5px;
+  left:-15px;
+}
+
+.wingThree {
+  transform: rotate(-90deg);
+  top:-5px;
+  left:25px;
+}
+
+.wingFour {
+  transform: rotate(180deg);
+  top:-25px;
+  left:5px;
+}
+
+.clouds {
+  position: absolute;
+  width: 50px;
+  height:15px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index:-1;
+  top:-120px;
+  box-shadow: -120px 40px rgba(255, 255, 255, 0.5), 80px 80px rgba(255, 255, 255, 0.5);
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {transform: translateX(0);}
+  25% {transform: translateX(-30px);}
+  50% {transform: translateX(0);}
+  75% {transform: translateX(30px);}
+  100% {transform: translateX(0);}
+}
+
+ol {
+	font-size: 19px;
+	margin:5px;
+}
+ol div {
+	margin: 0;
+	transform: translateY(-20px);
+	margin-left: 123px;
+	width : 200px;
+	height: 40px;
+	background-color: blue;
+	text-align: center;
+	color:white;padding-top: 5px;
+	border-radius: 0px;
+	border: 3px solid yellow;
+}
+
+
+p{
+
+  border-radius: 25px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: dimgray;
+  width: 120px;
+  padding: 10px;
+  padding-top: 10px;
+  margin: 10px;
+  font-family: "M PLUS Rounded 1c";
+    border: 3px solid white;
+    background-color: blue;
+ box-shadow: -48px -6px 25px -3px rgba(15,0,176,1);
+-webkit-box-shadow: -48px -6px 25px -3px rgba(15,0,176,1);
+-moz-box-shadow: -48px -6px 25px -3px rgba(15,0,176,1);
+margin: 70px;
+transform: translateX(-30px);
+cursor: cell;
+}
+section {
+	transform: translateX(-400px);
+}
+
+	</style>
+	<footer>
+  <p>Bernard Bala</p>
+  <p> Klasse : 10H1</p>
+  <p> Schule : KGS</p>
+</footer>
+
+	<ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index1.html">Inhaltsverzeichen</a></li>
+            <li><a href="index2.html">Die Aufgaben</a></li>
+            <li><a href="index3.html">Gehalt</a></li>
+            
+            <li><a href="index5.html">Fazit</a></li>
+
+
+        <h3>Der  Betrieb</h3>
+        <h2>Allgemeine Informationen</h2>
+        <ol>- Der Betrieb befindet sich jetz in Wiesmor. Am 19.September befand sich in Strackholt</ol>
+        <ol>- Der Betrieb gehört zum Teritär Sektor</ol>
+        <ol>- Der Betrieb wurde 2008 gegründed</ol>
+        <ol>- Arbeitszeiten : <div>Montag 14:00-20:00
+        </div><div>Dienstag 14:00-20:00</div><div>Mittwoch 14:00-20:00
+        </div><div>Donnerstag 14:00-20:00
+        </div><div>Freitag 12:00-18:00
+        </div>
+    </ol>
+       <h2>Es gibt folgende Abteilungen</h2>
+       <ol>- Es gab im Betrieb insgesamt 3 Abteilungen</ol>
+       <ol>- Es gab ein Wartezimmer und zwei Behandlungsräme</ol>
+       <ol>- Es gab insgesamt zwei Mitarbeiter. Ein Mitarbeiter musste im Wohnzimmer warten und der andere musste für die Gerätseinstellung helfen</ol>
+       <ol>- Es gab einen anderen Raum , der nur für Auszubildende war</ol>
+           </ul>
+          <section>
+                 <div class="container">
+  <div class="windmill">
+  <div class="line"></div>
+  <div class="mill"></div>
+  <div class="door"></div>
+    <div class="fan">
+      <div class="wingOne"></div>
+      <div class="wingTwo"></div>
+      <div class="wingThree"></div>
+      <div class="wingFour"></div>
+    </div>
+    <div class="clouds"></div>
+  </div>
+
+</div>
+</section>
+</div>
+
+
+
+</head>
+
+<body>
+
+
+</body>
+</html>
