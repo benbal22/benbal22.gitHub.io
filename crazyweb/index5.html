@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Falling Stars world</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+
+@import url('https://fonts.googleapis.com/css?family=Barlow');
+ 
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+body {
+  overflow: hidden;
+}
+h3 {
+	font-size: 40px;
+	position: absolute;
+	margin-top: 420px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	 font-family: 'Barlow', sans-serif;
+	color: royalblue;
+	}
+h1 {
+	position: absolute;
+	margin-top: 70px;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+ font-family: 'Barlow', sans-serif;
+	text-align: center;
+	color:white;
+	}
+h2 {
+	padding-right: 130px;
+	padding-left: 130px;
+	position: absolute;
+	margin-top: 200px;
+	color: white;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+	 font-family: 'Barlow', sans-serif;
+
+	}
+section  {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: url(bg2.jpg);
+	background-position: center;
+	background-size: cover;
+
+	animation: animateBg 45s linear infinite;
+}
+@Keyframes animateBg
+{
+	0%,100%
+	{
+		transform: scale(1);
+	}
+	50%
+	{
+		transform: scale(1.2);
+	}
+}
+span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 4px;
+	height: 4px;
+	background: #fff;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px rgba(255,255,255,0.1),
+	0 0 0 8px rgba(255,255,255,0.1),
+	0 0 20px rgba(255, 255, 255,1);
+	animation: Goku 3s linear infinite;
+}
+    
+    span::before {
+    	content: "";
+    	position:absolute;
+    	top: 50%;
+    	transform: translateY(-50%);
+    	width: 250px;
+    	height: 1px;
+    	background: linear-gradient(90deg, #fff,transparent);
+    }
+    @Keyframes Goku
+    {
+	0%
+	{
+		transform :rotate(315deg)translateX(0)
+	}
+	70% {
+opacity: 1;
+	}
+	100%
+	{
+			transform :rotate(315deg)translateX(-1000px)
+	}
+}    
+span:nth-child(1){
+	top: 0px;
+	right: 0px;
+	left: initial;
+	animation-delay: 0s;
+	animation-duration: 1s;
+}
+span:nth-child(2){
+	top: 0px;
+	right: 80px;
+	left: initial;
+	animation-delay: 0.2s;
+	animation-duration: 3s;
+}
+span:nth-child(3){
+	top: 80px;
+	right: 0px;
+	left: initial;
+	animation-delay: 0.4s;
+	animation-duration: 2s;
+}
+span:nth-child(4){
+	top: 0px;
+	right: 180px;
+	left: initial;
+	animation-delay: 0.6s;
+	animation-duration: 1.5s;
+}
+span:nth-child(5){
+	top: 0px;
+	right: 400px;
+	left: initial;
+	animation-delay: 0.8s;
+	animation-duration: 2.5s;
+}
+span:nth-child(6){
+	top: 0px;
+	right: 600px;
+	left: initial;
+	animation-delay: 1s;
+	animation-duration: 3s;
+}
+span:nth-child(7){
+	top: 300px;
+	right: 0px;
+	left: initial;
+	animation-delay: 1.2px;
+	animation-duration: 1.75s;
+}
+span:nth-child(8){
+	top: 0px;
+	right: 700px;
+	left: initial;
+	animation-delay: 1.4px;
+	animation-duration: 1.25s;
+}
+span:nth-child(9){
+	top: 0px;
+	right: 1000px;
+	left: initial;
+	animation-delay: 0.75px;
+	animation-duration: 2.25s;
+}
+span:nth-child(10){
+	top: 0px;
+	right: 450px;
+	left: initial;
+	animation-delay: 2.75px;
+	animation-duration: 2.25s;
+}
+
+li {
+  word-spacing: 10px;
+  padding: 5px;
+ font-size: 20px;
+margin: 10px;
+transform: translateX(100px);
+  width: 145px;
+  height: 40px;
+    color: white;
+    background-color: lightblue;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    border: 3px solid yellow;
+    text-align: center;
+    font-family: "M PLUS Rounded 1c";
+    border-radius: 10px;
+   backgound-color: gray;
+
+cursor: cell;
+}
+p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+</style>
+</head>
+
+
+<body>
+	<section>
+		<span></span>
+		<span></span>
+			<span></span>
+		<span></span>
+			<span></span>
+		<span></span>
+			<span></span>
+		<span></span>
+			<span></span>
+		<span></span>
+	</section>
+
+    </div>
+    <ul>
+            <li><a href="index.html">Home</a></li>
+           
+</ul>
+<h1>Das Fazit</h1>
+<h2> Mir hat das Praktikum sehr gut gefallen. Es waren alle sehr lieb und sie sind mir mir umgegangen wie ein Mitarbeiter. Ich hätte nicht gedacht, dass ich so viel machen darf und deswegen habe ich auch Automatisch sehr viele Erfahrungen gemacht .Ich bin sicher , dass ich den Beruf in Zukunft machen werde , weil ich in diesen Beruf gut bin und es macht Spaß. Ich werde die Ausbildung machen , ohne Abitur verdient man nicht so viel Geld wie ich mir wünsche , aber ich werde trotzdem Ausbildung anfangen . </h2>
+<h3> Vielen Dank für Ihre Aufmerksamkeit</h3>
+  </body>
+<footer>
+  <p>Bernard Bala</p>
+  <p> Klasse : WHHI1</p>
+  <p> Schule : BBS 1 Leer</p>
+</footer>
+</html>
+      
