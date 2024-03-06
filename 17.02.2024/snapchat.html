@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Iphone</title>
+</head>
+              <style type="text/css">
+                @import url(https://fonts.googleapis.com/css?family=Montserrat|Quicksand:400,300,700); 
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+       font-family: Arial, Helvetica, sans-serif;
+  background: #F1EFEF;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+background-image: linear-gradient(-20deg, #4B7160 0%, #9D9C4E 38%, #B0BF84 66%, #A4D7B3 100%);  
+}
+
+#iphone {
+  position: relative;
+  width: 300px;
+  height: 640px;
+}
+
+#iphone > div {
+  position: absolute;
+}
+
+#iphone #housing, #iphone #iphone-shadow-mask, #iphone #iphone-gradient-mask {
+  border-radius: 41px;
+  width: 100%;
+  height: 100%;
+}
+
+#iphone #screen {
+  position: relative;
+  z-index: 4;
+  width: 264px;
+  height: 466px;
+  background-color:white;
+  border: 2px solid #1D1C1C;
+  box-shadow: inset 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 1px;
+}
+
+#iphone #housing {
+  z-index: 3;
+  background: #070708;
+  border: solid 1px rgba(44, 44, 44, 0.4);
+  box-shadow: inset 0px 0px 3px 1px rgba(206, 206, 206, 0.49);
+}
+
+#iphone #housing > div {
+  position: absolute;
+}
+
+#iphone #housing #camera {
+  z-index: 10;
+  width: 8px;
+  height: 8px;
+  top: 25px;
+  border-radius: 4px;
+  background-image: linear-gradient(223deg, #201E22 0%, #343436 86%);
+}
+
+#iphone #housing #camera:after, #iphone #housing #camera:before {
+  position: absolute;
+  display: block;
+  content: ' ';
+  border-radius: 10px;
+}
+
+#iphone #housing #camera:before {
+  z-index: 9;
+  padding: 3px;
+  background-image: linear-gradient(229deg, rgba(50, 46, 46, 0.75) 0%, #232020 100%);
+}
+
+#iphone #housing #camera:after {
+  z-index: 11;
+  width: 3px;
+  height: 3px;
+  background-image: linear-gradient(81deg, #0C4298 50%, #117486 100%);
+}
+
+#iphone #housing #speaker {
+  position: relative;
+  z-index: 11;
+  top: 49px;
+  width: 51px;
+  height: 6px;
+  background: #1f1a1a;
+  box-shadow: inset 0px 0px 1px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 9px;
+}
+
+#iphone #housing #speaker-gradient-mask {
+  z-index: 9;
+  top: 46px;
+  display: block;
+  content: ' ';
+  width: 51px;
+  height: 6px;
+  padding: 3px;
+  border-radius: 10px;
+  background-image: linear-gradient(6deg, rgba(62, 59, 59, 0.75) 0%, rgba(64, 63, 63, 0.66) 13%, #232020 74%);
+}
+
+#iphone #housing #home-button {
+  width: 57px;
+  height: 57px;
+  bottom: 14px;
+  left: 50%;
+  border-radius: 30px;
+  background: #070708;
+  box-shadow: 0px -1px 1px 0px rgba(32, 30, 30, 0.7), inset 0px -10px 10px 0px rgba(42, 41, 41, 0.63);
+}
+
+#iphone #housing #home-button:after, #iphone #housing #home-button:before {
+  position: absolute;
+  display: block;
+  content: ' ';
+  width: 17px;
+  height: 17px;
+}
+
+#iphone #housing #home-button:before {
+  padding: 2px;
+  z-index: 10;
+  border-radius: 5px;
+  background-image: linear-gradient(9deg, #a0a0a0 0%, rgba(113, 113, 113, 0.74) 100%);
+}
+
+#iphone #housing #home-button:after {
+  border-radius: 3px;
+  z-index: 11;
+  background: #070708;
+}
+
+#iphone #iphone-gradient-mask {
+  z-index: 2;
+  padding: 6px;
+  border: 1px solid #227ab9;
+  background-image: linear-gradient(157deg, #43bbe5 0%, #227ab9 100%);
+  box-shadow: inset 0px 0px 2px 1px rgba(172, 172, 172, 0.5);
+}
+
+#iphone #side-buttons {
+  z-index: 1;
+  left: -10px;
+  top: 84px;
+}
+
+#iphone #side-buttons > div {
+  border-radius: 2px;
+  border: 1px solid rgba(34, 122, 185, 0.5);
+}
+
+#iphone #side-buttons #power {
+  position: absolute;
+  border-radius: 4px;
+  width: 50px;
+  height: 5px;
+  top: -94px;
+  left: 215px;
+  background-image: linear-gradient(0deg, #51C4EC 23%, #4EA0DA 24%);
+}
+
+#iphone #side-buttons #top, #iphone #side-buttons #middle, #iphone #side-buttons #bottom {
+  background-image: linear-gradient(90deg, #51C4EC 3%, #4EA0DA 40%);
+  width: 5px;
+}
+
+#iphone #side-buttons #middle, #iphone #side-buttons #bottom {
+  height: 45px;
+}
+
+#iphone #side-buttons #top {
+  height: 29px;
+  margin-bottom: 18px;
+}
+
+#iphone #side-buttons #middle {
+  margin-bottom: 15px;
+}
+
+#iphone #iphone-shadow-mask {
+  z-index: 0;
+  padding: 4px;
+  box-shadow: -4px 2px 4px 0px rgba(0, 0, 0, 0.34), 4px 2px 5px 0px rgba(0, 0, 0, 0.34), 2px 10px 25px 0px rgba(46, 41, 41, 0.38), inset 0px 0px 1px 2px rgba(144, 144, 144, 0.5);
+}
+
+.center-center, #iphone #housing #camera:before, #iphone #housing #camera:after, #iphone #housing #home-button:after, #iphone #housing #home-button:before {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.horizontal-center {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+small {
+  width: 300px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  bottom: 170px;
+  left: 180px;
+  color: #070708;
+}
+
+small span {
+  padding: 0 3px;
+  color: rgba(232, 41, 41, 0.9);
+  font-size: larger;
+}
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+iframe{
+    margin-top: 50px;
+
+}
+ 
+
+
+ 
+
+             </style>
+  
+            <script type="text/javascript">
+     
+ 
+
+            </script>
+             
+    
+
+ 
+<body>
+   
+     <html>
+<head>
+    <meta charset='UTF-8'>
+    <title> CSS iPhone 5c</title> 
+</head>
+<body>
+     
+
+    <div id='iphone' class='center-center'> 
+
+     <div id='screen' class='center-center'> 
+   
+         
+            
+<!-- Top Navigation Menu -->
+<div class="topnav">
+  <a href="hey.html" class="active"> Apps </a> 
+    <iframe width="390" height="370" src="https://www.bing.com/search?q=snapchat+login&cvid=8535727783da4c9fa370b8c8697f3ef5&gs_lcrp=EgZjaHJvbWUqBggAEAAYQDIGCAAQABhAMgYIARBFGDkyBggCECMYJzIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQABhAMgYIBxAAGEAyBggIEAAYQNIBCDM0NzlqMGo5qAIAsAIA&FORM=ANAB01&PC=U531" frameborder="0" scrolling="auto" allowfullscreen>
+</iframe>
+</div>
+
+        </div>
+        <div id='housing' class='center-center'>
+            <div id='camera' class='horizontal-center'></div>
+            <div id='speaker' class='horizontal-center'></div>
+            <div id='speaker-gradient-mask' class='horizontal-center'></div>
+            <div id='home-button' class='horizontal-center'></div>
+        </div>
+        <div id='iphone-gradient-mask' class='center-center'></div>
+        <div id='side-buttons'>
+            <div id='power'></div>
+            <div id='top'></div>
+            <div id='middle'></div>
+            <div id='bottom'></div>
+        </div>
+        <div id='iphone-shadow-mask' class='center-center'></div>
+        <small>Bernard <span>&#10084;</span>Bala</small>
+    </div>
+</body>
+</html>
+
+ 
+
+</body>
+</html>
